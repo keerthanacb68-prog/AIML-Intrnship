@@ -1,7 +1,7 @@
-import math_operations
-result_power = math_operations.power(2,10)
-numbers = [10, 20, 30, 40]
-result_average = math_operations.average(numbers)
+import csv
 
-print("2^10 =", result_power)
-print("Average =", result_average)
+with open("d:\Company_Data.csv", mode = "r") as file:
+
+    csv_file =  csv.reader(file)
+    for lines in csv_file:
+        print(lines)
